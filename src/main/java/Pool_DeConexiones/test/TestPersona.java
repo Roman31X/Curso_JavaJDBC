@@ -24,10 +24,6 @@ public class TestPersona {
             }
             System.out.println();
 
-            listaPersonas.forEach(lista -> {
-                System.out.println(lista);
-            });
-
             conexion.commit();
 
         } catch (SQLException e) {
