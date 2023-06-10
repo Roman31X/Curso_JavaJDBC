@@ -28,8 +28,6 @@ public class TestPersona {
                 System.out.println(lista);
             });
 
-
-
             conexion.commit();
 
         } catch (SQLException e) {
