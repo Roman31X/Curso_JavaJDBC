@@ -22,7 +22,6 @@ public class TestPersona {
             for(PersonaDTO lista : listaPersonas){
                 System.out.println(lista);
             }
-            System.out.println();
 
             conexion.commit();
 
