@@ -23,6 +23,12 @@ public class TestPersona {
                 System.out.println(lista);
             }
 
+            System.out.println();
+
+            listaPersonas.forEach(PersonaDTO -> {
+                System.out.println("Persona : " + listaPersonas);
+            });
+
             conexion.commit();
 
         } catch (SQLException e) {
