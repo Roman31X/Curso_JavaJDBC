@@ -36,14 +36,14 @@ public class TestManejoPersona {
             System.out.println("Persona : " + persona);
         }
         */
-        /**ELIMINAR UN DATO EN EL REGISTRO
-        Persona personaDELE = new Persona(9);
+        //ELIMINAR UN DATO EN EL REGISTRO
+        Persona personaDELE = new Persona(10);
         personaDao.eliminar(personaDELE);
         //AGREGAMOS LA INFORMACION DEL OBJETO PERSONADAO
         List<Persona> listaPersonas  = personaDao.seleccionar();
         for(Persona persona : listaPersonas){
             System.out.println("Persona : " + persona);
-        }*/
+        }
 
     }
 }
