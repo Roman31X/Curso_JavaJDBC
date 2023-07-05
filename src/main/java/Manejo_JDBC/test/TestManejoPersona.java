@@ -18,8 +18,8 @@ public class TestManejoPersona {
 
         /**AGREGAR UN NUEVO DATO A LA BASE DE DATOS*/
         //CREMAOS UN NUEVO OBJETO DE TIPO PERSONA
-        Persona persona = new Persona("Camila","Loza","Loza@gmail.com","985154124");
-        personaDao.insertar(persona);
+        /*Persona persona = new Persona("Camila","Loza","Loza@gmail.com","985154124");
+        personaDao.insertar(persona);*/
 
         //AGREGAMOS LA INFORMACION DEL OBJETO PERSONADAO
         //List<Persona> listaPersonas  = personaDao.seleccionar();
