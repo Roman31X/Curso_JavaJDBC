@@ -22,11 +22,11 @@ public class TestManejoPersona {
         personaDao.insertar(persona);
 
         //AGREGAMOS LA INFORMACION DEL OBJETO PERSONADAO
-        List<Persona> listaPersonas  = personaDao.seleccionar();
+        //List<Persona> listaPersonas  = personaDao.seleccionar();
         //CICLO FORIACH PARA ITERR LA INFORMACION DE LA LISTA
-        for(Persona personas : listaPersonas){
+        /*for(Persona personas : listaPersonas){
             System.out.println("Persona : " + personas);
-        }
+        }*/
         System.out.println();
         /**ACTUALIZAR UN DATO EN EL REGISTRO*/
         /*Persona personaUPDATE = new Persona(4,"Renne","Magallanes","rene.ma25@gmail.com","923788052");
