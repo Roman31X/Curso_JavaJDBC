@@ -43,8 +43,6 @@ public class BaseDatosMensaje {
                 default:
                     break;
             }
-
-
         }while(opcion != 5);
 
     }

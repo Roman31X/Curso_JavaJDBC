@@ -1,0 +1,35 @@
+|| APUNTES SOBRE API ||
+
+--SIGNIFICADO--
+
+API : Application - Programming - Interface y su significado en español
+es [Interfaz de Programación de Aplicaciones]
+
+--CONCEPTO--
+
+Es un conjunto de funciones y procedimientos, métodos que se usan para
+diseñar e integrar el software de diferentes aplicaciones. Permitiendo
+que varias aplicaciones se puedan comunicar entre sí, por más que estén
+desarrolladas en lenguajes de programación completamente distintos.
+
+--COMO SE COMUNICAN--
+
+La forma más común de implementación de una API es mediante REST [Representational
+State Transfer] REST es un tipo de servicio que se caracteriza por no
+tener estado alguno y por lograr interconexiones mediante el protocolo HTTP
+con mensajes de tipo XML o JSON.
+
+--MÉTODOS HTTP--
+
+GET : Obtener información de una API
+POST : Enviar información y almacenarla
+PUT : Para actualizar la información
+DELETE : Para eliminar información
+
+--EJEMPLO--
+             GET/POST/PUT/DELETE
+    |----------|            ............            ----------
+    |          |  =======>  .          .  =======>  -        -
+    |          |  <=======  .          .  <=======  -        -
+    |----------|    JSON    ............            ----------
+      CLIENTE                 REST API               DATABASE
