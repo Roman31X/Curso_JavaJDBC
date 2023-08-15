@@ -1,0 +1,38 @@
+||  BASE DE DATOS NO RELACIONALES  ||
+
+Las bases de datos no relacionales también son conocidas como
+base de datos no SQL utilizan estructura de datos flexibles y no
+requieren un esquema como las bases de datos relacionales, pueden
+utilizar cualquier tipo de datos como [DOCUMENTOS - GRAFOS - CLAVE VALOR]
+según las necesidades de la aplicación.
+
+--EJEMPLO--
+
+Se puede tomar como ejemplo un sistema de recomendaciones en linea
+donde los datos se almacenan en documentos JSON y donde se pueden acceder
+y actualizar de manera más rápida y flexible
+
+--ESTRUCTURA--
+
+Compuesta por una estructura más flexible los [DOCUMENTOS - GRAFOS - CLAVE VALOR]
+pueden contener diferentes tipos de datos y no necesitan una estructura
+predefinida
+
+--ESCALABILIDAD--
+
+Este tipo de base datos esta condicionada que su escalabilidad se dara
+de manera horizontal -- , lo que significa que puede manejar grandes volumenes
+de datos distribuyendo la carga en multiples servidores.
+
+--CONSULTA Y FLEXIBILIDAD--
+
+Este tipo de base de datos son mas adecuadas cuando la flexibilidad y
+la velocidad son prioritarias especialmente en aplicaciones con datos no
+no estructurados o en constantes cambios
+
+--CONSISTENCIAS Y TRANSACCIONES--
+
+En este caso la base de datos no relacionales pueden sacrificar al de la
+consistencia para lograr una mayor escalabilidad y rendimientos en entonos
+distribuidos
+

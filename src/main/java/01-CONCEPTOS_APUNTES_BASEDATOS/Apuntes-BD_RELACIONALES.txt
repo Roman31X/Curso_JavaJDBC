@@ -1,0 +1,43 @@
+||---BASE DE DATOS RELACIONALES---||
+
+Este tipo de base de datos utilizan una estructura tabular con
+filas columnas pata almacenar y organizar los datos utilizan el
+modelo de dato relacional donde los datos se almacena en tablas
+y se establece relaciones entre ellas entre claves primarias y
+claves externas.
+
+--EJEMPLO--
+
+*Una base de datos de un inventario de una tienda donde tendremos
+dos tablas la cual la primera almacenara lso productos y la segunda
+almacenara a loa proveedores.
+
+||---------PRODUCTOS------------||                  ||-----------PROVEEDOR-----------||
+||-ID-||--PRODUCTO--||--FECHA---||                  ||-ID-||----NOMBRE--||--EMPRESA--||
+||-01-||Azúcar Rubia||10/08/2023||    relación      ||-01-||Diego Guerra||ALICOR     ||
+||-02-||Arroz Faraon||11/08/2023||*|--------------|*||-02-||Daniel Rojas||BACKUZ     ||
+||-03-||Aceite Real ||15/08/2023||                  ||-03-||Felipe Tipte||COCA-COLA  ||
+||-04-||Sal Marinada||18/08/2023||                  ||-04-||Gustavo Tico||CAMPOMAR   ||
+||-05-||Aji - Nomoto||20/08/2023||                  ||-05-||Saul Sanchez||FARAON     ||
+
+--ESTRUCTURA--
+
+Compuesta por una estructura rígida y requieren unn esquema definido
+de antemano cada tabla tiene columnas predefinidas y los datos se
+almacenan en filas.
+
+--ESCALABILIDAD--
+
+Este tipo de Base de datos son escalables verticalmente | , por ende se puede
+agregar más recurso a un existente.
+
+--CONSULTA Y FLEXIBILIDAD--
+
+Este tipo de base de datos son excelentes para consultas estructuradas y
+operaciones complejas que requieren relaciones entre multiples tablas.
+
+--CONSISTENCIAS Y TRANSACCIONES--
+
+En este caso las base de datos relaciones ofrecen características robustas
+de consistencia y transacciones como son la TOMICIDAD - CONSISTENCIA - AISLAMIENTO
+Y DURABILIDAD para garantizar la integridad de los datos.

@@ -28,7 +28,10 @@ public class TestManejoPersona {
             System.out.println("Persona : " + personas);
         }*/
         System.out.println();
-        /**ACTUALIZAR UN DATO EN EL REGISTRO*/
+        /**
+         * ACTUALIZAR UN DATO EN EL REGISTRO
+         * @code {PersonaDAO()}
+         * */
         /*Persona personaUPDATE = new Persona(4,"Renne","Magallanes","rene.ma25@gmail.com","923788052");
         personaDao.actualizar(personaUPDATE);
         List<Persona> listaPersonas  = personaDao.seleccionar();
