@@ -4,7 +4,7 @@ public class Gato {
 
     String id;
     String url;
-    String apiKey;
+    String apiKey = "live_vmEy0KXJwkfhMX8fRRGzqqfTrcqAHcf7IgN4D2OAtzC9FsA7D11wgTtJEbKLyyTk";
     String imagen;
 
     public String getId() {
