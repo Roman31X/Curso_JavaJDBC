@@ -9,4 +9,16 @@ public class Textos {
         }
         return palabra;
     }
+
+    public static int suma(int a, int b){
+        int suma = a + b;
+        return suma;
+    }
+    public static boolean pregunta(int a,int b){
+        if(a>b){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
