@@ -12,6 +12,8 @@
         <exec.mainClass>mx.com.gm.jdbc.curso_java_jdbc.Curso_Java_JDBC</exec.mainClass>
     </properties>
     <dependencies>
+
+        <!--Libreria importada para realizar Conexiones a las bases de datos-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -22,6 +24,8 @@
             <artifactId>commons-dbcp2</artifactId>
             <version>2.9.0</version>
         </dependency>
+
+        <!--Libreria importada para realizar peticiones PIS REST-->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -37,6 +41,8 @@
             <artifactId>HttpClient</artifactId>
             <version>1.0.5</version>
         </dependency>
+
+        <!--Libreria importada para realizar Test-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
