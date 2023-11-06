@@ -22,12 +22,4 @@ public class Textos {
             return false;
         }
     }
-
-    public static boolean pregunta2(int a,int b){
-        if(a>b){
-            return true;
-        }else{
-            return false;
-        }
-    }
 }
