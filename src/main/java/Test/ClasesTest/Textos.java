@@ -14,4 +14,20 @@ public class Textos {
         int suma = a + b;
         return suma;
     }
+
+    public static boolean pregunta(int a,int b){
+        if(a>b){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public static boolean pregunta2(int a,int b){
+        if(a>b){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
