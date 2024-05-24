@@ -90,4 +90,14 @@ UPDATE `zona_fit_db`.`cliente` SET `apellido` = 'Rojas', `membresia` = '150' WHE
 DELETE FROM `zona_fit_db`.`cliente` WHERE (`id` = '3');
 ```
 
+# Implementación de librería MySQL en ***pom.xml***
+```xml
+<!--Librería importada para realizar Conexiones a las bases de datos-->
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>8.3.0</version>
+</dependency>
+```
+
 
