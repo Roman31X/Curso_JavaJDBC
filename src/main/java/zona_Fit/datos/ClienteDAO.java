@@ -41,6 +41,29 @@ public class ClienteDAO implements IClienteDAO{
 
     @Override
     public boolean buscarClientePorId(Cliente cliente) {
+        PreparedStatement ps;
+        ResultSet rs;
+        var con = getConexion();
+        var sql = "SELECT * FROM cliente WHERE id = ?";
+        try{
+            ps = con.prepareStatement(sql);
+            ps.setInt(1,cliente.getId());
+            rs = ps.executeQuery();
+            if(rs.next()){
+                cliente.setNombre(rs.getString("nombre"));
+                cliente.setApellido(rs.getString("apellido"));
+                cliente.setMembresia(rs.getInt("membresia"));
+                return true;
+            }
+        }catch (Exception e){
+            System.out.println("Error al recuperar cliente por id: "+e.getMessage());
+        }finally {
+            try{
+                con.close();
+            }catch (Exception e){
+                System.out.println("Error al cerrar conexión");
+            }
+        }
         return false;
     }
 
@@ -64,5 +87,9 @@ public class ClienteDAO implements IClienteDAO{
         var prueba = new ClienteDAO();
         List<Cliente> usuarios = prueba.listarClientes();
         usuarios.forEach(System.out::println);
+
+        var id = new Cliente(3);
+        var esCliente = prueba.buscarClientePorId(id);
+        System.out.println("Se encontro registro: "+ esCliente);
     }
 }
