@@ -95,9 +95,15 @@ public class ClienteDAO implements IClienteDAO{
     public boolean modificarCliente(Cliente cliente) {
         PreparedStatement ps;
         Connection con = getConexion();
-        var sql = "UPDATE cliente SET nombre=?, apellido=?, menbresia=? WHERE id = ?";
+        var sql = "UPDATE cliente SET nombre=?, apellido=?, membresia=? WHERE id = ?";
         try{
-
+            ps = con.prepareStatement(sql);
+            ps.setString(1,cliente.getNombre());
+            ps.setString(2, cliente.getApellido());
+            ps.setInt(3,cliente.getMembresia());
+            ps.setInt(4,cliente.getId());
+            ps.execute();
+            return true;
         }catch (Exception e){
             System.out.println("Error al modificar datos del cliente: "+e.getMessage());
         }finally {
@@ -112,6 +118,23 @@ public class ClienteDAO implements IClienteDAO{
 
     @Override
     public boolean eliminarCliente(Cliente cliente) {
+        PreparedStatement ps;
+        Connection con = getConexion();
+        String sql = "DELETE FROM cliente WHERE id = ?";
+        try{
+            ps = con.prepareStatement(sql);
+            ps.setInt(1,cliente.getId());
+            ps.execute();
+            return true;
+        }catch (Exception e){
+            System.out.println("Error al eliminar a un cliente: "+e.getMessage());
+        }finally {
+            try{
+                con.close();
+            }catch (Exception e){
+                System.out.println("Error al cerra la conexión: "+e.getMessage());
+            }
+        }
         return false;
     }
 
@@ -129,5 +152,13 @@ public class ClienteDAO implements IClienteDAO{
         var ingreso = prueba.agregarCliente(nuevo);
         System.out.println("Se registro nuevo cliente: "+ingreso);
         usuarios.forEach(System.out::println);*/
+
+        /*var modificar = new Cliente(4,"Rocío", "Solis", 140);
+        var modificado = prueba.modificarCliente(modificar);
+        System.out.println("Se registro nuevo cliente: "+modificado);*/
+
+        /*var idEliminar = new Cliente(4);
+        var clientEliminado = prueba.eliminarCliente(idEliminar);
+        System.out.println("Se elimino del registro: "+ clientEliminado);*/
     }
 }
