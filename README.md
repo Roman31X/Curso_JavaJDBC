@@ -100,4 +100,16 @@ DELETE FROM `zona_fit_db`.`cliente` WHERE (`id` = '3');
 </dependency>
 ```
 
+## PATRONES DE DISEÑO
+Un patron de diseño son soluciones ya conocidas a problemas que nos 
+encontramos comunmente al crear aplicaciones. Cada patrón es como un 
+plano que podemos usar y personalizar para resolver un problema al 
+diseñar una aplicación.
+
+### Patrón de Diseño DAO
+- DAO - Data Access Object
+- Este patrón se utiliza para acceder a la información de una entidad
+de nuestra aplicación.
+- ORM - Object Relational Mapping
+
 
